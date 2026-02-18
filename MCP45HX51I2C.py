@@ -3,22 +3,27 @@ from machine import I2C, Pin
 from micropython import const
 
 """
-This class is used to control the MCP45HX51 digital potentiometer
+MCP45HX51 I2C MicroPython Library
 
-R0HW: This bit forces Resistor 0 into the “shutdown” configuration of the Hardware pin
-R0A This bit connects/disconnects the Resistor 0 Terminal A to the Resistor 0 Network
-R0W This bit connects/disconnects the Resistor 0 Wiper to the Resistor 0 Network
-R0B This bit connects/disconnects the Resistor 0 Terminal B to the Resistor 0 Network
-https://ww1.microchip.com/downloads/en/DeviceDoc/20005304A.pdf  
-      0 >  253 Om
-     22 >  670 Om
-     23 >  687 Om
-     34 >  898 Om
-     35 >  917 Om
-    143 > 2971 Om
-    255 > 5000 Om
+GitHub Repository: https://github.com/rrokot/MCP45HX51_I2C_micropython
+Datasheet: https://ww1.microchip.com/downloads/en/DeviceDoc/20005304A.pdf
+
+TCON Register Bits:
+R0HW: This bit forces Resistor 0 into the "shutdown" configuration of the Hardware pin
+R0A: This bit connects/disconnects the Resistor 0 Terminal A to the Resistor 0 Network
+R0W: This bit connects/disconnects the Resistor 0 Wiper to the Resistor 0 Network
+R0B: This bit connects/disconnects the Resistor 0 Terminal B to the Resistor 0 Network
+
+Resistance Range (approximate):
+      0 >  253 Ω
+     22 >  670 Ω
+     23 >  687 Ω
+     34 >  898 Ω
+     35 >  917 Ω
+    143 > 2971 Ω
+    255 > 5000 Ω
 """
-# min 250 Om
+# min 250 Ω
 # _GCALL_TCON = const(0x60)
 # _GCALL_WIPER = const(0x40)
 # _GCALL_WIPERUP = const(0x42)
