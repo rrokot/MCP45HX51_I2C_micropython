@@ -94,7 +94,7 @@ device1 = Mcp45hx51(i2c, 60, debug=True)
 device2 = Mcp45hx51(i2c, 61, debug=True)
 
 # Configure device1
-device1.poweroff(True)              # Power on the device
+device1.poweroff(True)              # Enable device (True = power ON)
 device1.connect_wiper(True)         # Connect wiper to resistor network
 device1.connect_terminal_b(False)   # Disconnect terminal B
 device1.tcon_read()                 # Read TCON register
