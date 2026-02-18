@@ -5,8 +5,6 @@ from micropython import const
 """
 MCP45HX51 I2C MicroPython Library
 
-This library is used to control the MCP45HX51 digital potentiometer via I2C interface.
-
 GitHub Repository: https://github.com/rrokot/MCP45HX51_I2C_micropython
 Datasheet: https://ww1.microchip.com/downloads/en/DeviceDoc/20005304A.pdf
 
