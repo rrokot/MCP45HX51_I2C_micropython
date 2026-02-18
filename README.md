@@ -164,9 +164,10 @@ Connect or disconnect the wiper.
 #### Power Management
 
 ##### `poweroff(value)`
-Control device power state.
-- **Parameters:** `value` (bool) - True to power on, False to power off
+Control device power state via hardware shutdown bit.
+- **Parameters:** `value` (bool) - True to enable (power on), False to shutdown (power off)
 - **Returns:** None
+- **Note:** Despite the method name, `True` powers the device ON, `False` powers it OFF
 
 #### TCON Register
 
