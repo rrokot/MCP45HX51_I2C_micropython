@@ -25,7 +25,7 @@ Resistance Range (approximate):
     143 > 2971 Ω
     255 > 5000 Ω
 """
-# min 250 Om
+# min 250 Ω
 # _GCALL_TCON = const(0x60)
 # _GCALL_WIPER = const(0x40)
 # _GCALL_WIPERUP = const(0x42)
